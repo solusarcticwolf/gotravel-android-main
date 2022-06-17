@@ -1,0 +1,313 @@
+<resources>
+
+
+    <style name="TextViewCustomFont">
+        <item name="fontPath">fonts/OpenSans-Regular.ttf</item>
+    </style>
+
+    <style name="ButtonCustomStyle" parent="Base.Widget.AppCompat.Button">
+
+        <item name="fontPath">fonts/OpenSans-Regular.ttf</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="background">@drawable/ripple</item>
+    </style>
+
+    <style name="SearchView" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="SpinnerCustomStyle" parent="android:Theme.Holo.Light.DarkActionBar">
+
+        <item name="fontPath">fonts/OpenSans-Regular.ttf</item>
+        <item name="android:text">12sp</item>
+        <item name="android:textColor">@color/light_blue</item>
+
+    </style>
+
+    <style name="AutoCustomStyle" parent="Base.Widget.AppCompat.AutoCompleteTextView">
+
+        <item name="fontPath">fonts/OpenSans-Regular.ttf</item>
+        <item name="background">@color/white</item>
+        <item name="android:borderlessButtonStyle">@color/full_black</item>
+        <item name="colorControlNormal">@color/light_blue</item>
+        <item name="colorControlHighlight">@color/light_blue</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/white</item>
+
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCustomStyle</item>
+
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerCustomStyle</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerCustomStyle</item>
+        <item name="android:textViewStyle">@style/TextViewCustomFont</item>
+        <item name="android:editTextStyle">@style/TextViewCustomFont</item>
+        <item name="android:buttonStyle">@style/ButtonCustomStyle</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/primary</item>
+    </style>
+
+
+    <style name="AviasalesTemplateTheme"></style>
+
+
+    <style name="search.passengers" parent="search.class">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="search.class" parent="search.class.title">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/grey_37474F</item>
+    </style>
+
+    <style name="search.class.title" parent="search">
+        <item name="robotoTypeface">roboto_regular</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/grey_37474F</item>
+    </style>
+
+    <style name="search" parent="AviasalesTemplateTheme" />
+
+    <style name="search.date.normal" parent="search.text.normal" />
+
+    <style name="search.text.normal" parent="search.onelinetext">
+        <item name="android:textSize">14dp</item>
+        <item name="robotoTypeface">roboto_regular</item>
+        <item name="android:textColor">@color/search_form_destination_text</item>
+    </style>
+
+    <style name="search.onelinetext">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="search.date.small" parent="search.text.small"></style>
+
+    <style name="search.text.small" parent="search.onelinetext">
+        <item name="android:textSize">12dp</item>
+        <item name="robotoTypeface">roboto_regular</item>
+        <item name="android:textColor">@color/grey_98000000</item>
+    </style>
+
+    <style name="common" />
+
+    <style name="button.light" parent="common">
+        <item name="android:background">@drawable/button_light_bkg</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="button.ligh2t" parent="common">
+        <item name="android:background">@drawable/ripple</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="search.destination.iata" parent="search.onelinetext">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/dark_blue_455A64</item>
+        <item name="robotoTypeface">roboto_medium</item>
+    </style>
+
+    <style name="search.passengers.title" parent="search.class.title">
+        <item name="android:textColor">@color/grey_98000000</item>
+    </style>
+
+    <style name="search.destination.city" parent="search.onelinetext">
+        <item name="android:textSize">18dp</item>
+        <item name="robotoTypeface">roboto_regular</item>
+        <item name="android:textColor">@color/grey_37474F</item>
+    </style>
+
+    <style name="search.destination.airport" parent="search.onelinetext">
+        <item name="android:textSize">10dp</item>
+        <item name="robotoTypeface">roboto_regular</item>
+        <item name="android:textColor">@color/grey_37474F</item>
+    </style>
+
+    <style name="search.title_button">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="robotoTypeface">roboto_regular</item>
+        <item name="android:textColor">@color/grey_626262</item>
+    </style>
+
+    <style name="CustomDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@drawable/rounded_dialog</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:alwaysDrawnWithCache">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="dialog" />
+
+    <style name="dialog.title" parent="dialog">
+        <item name="android:textSize">20dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="robotoTypeface">roboto_medium</item>
+        <item name="android:textColor">@color/grey_text</item>
+    </style>
+
+    <style name="dialog.passenger" parent="dialog" />
+
+    <style name="dialog.passengerPicker.text" parent="dialog.passenger">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="dialog.tripclass.item" parent="dialog.sorting.item">
+        <item name="android:background">@drawable/radio_button_no_selector</item>
+    </style>
+
+    <style name="dialog.sorting.item" parent="dialog">
+        <item name="android:textSize">13.33dp</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:background">@drawable/radio_button_selectable</item>
+    </style>
+
+    <style name="base_listview_with_divider">
+        <item name="android:dividerHeight">1px</item>
+    </style>
+
+    <style name="results.listview" parent="base_listview_with_divider">
+        <item name="android:overScrollMode">ifContentScrolls</item>
+        <item name="android:cacheColorHint">@color/white</item>
+        <item name="android:dividerHeight">0.33dp</item>
+        <!-- <item name="android:divider">@drawable/results_listview_divider</item>-->
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="results.actionbar.title" parent="results">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="robotoTypeface">roboto_medium</item>
+    </style>
+
+    <style name="results" parent="Theme.Aviasales" />
+
+    <style name="Theme.Aviasales" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="waiting.dialog.text.medium" parent="main_text_color_without_states">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="main_text_color_without_states">
+        <item name="android:textColor">@color/dark_blue_455A64</item>
+    </style>
+
+    <style name="waiting.dialog.text.small" parent="main_text_color_without_states">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="browser.dialog" parent="CustomDialog">
+        <!--<item name="android:windowBackground">@drawable/browser_dialog_bkg</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:alwaysDrawnWithCache">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:width">225dp</item>
+    </style>
+
+    <style name="browser" />
+
+    <style name="browser.dialog.text" parent="browser">
+        <item name="android:textSize">15.5dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--
+
+    <style name="filters_seekbar"
+        parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">@dimen/filters_seekbar_height</item>
+        <item name="android:progressDrawable">@drawable/filters_seekbar</item>
+        <item name="android:thumb">@drawable/seek_bar_thumb</item>
+    </style>
+-->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <declare-styleable name="RangeBar">
+        <attr name="absoluteMinValue" format="integer|float" />
+        <attr name="absoluteMaxValue" format="integer|float" />
+        <attr name="singleThumb" format="boolean" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="thumbColor" format="color" />
+        <attr name="thumbRippleColor" format="color" />
+        <attr name="disabledColor" format="color" />
+    </declare-styleable>
+
+
+    <style name="BlueTextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#009339</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="progressBargreen" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/fm</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/inactive</item>
+        <item name="colorControlActivated">@color/active</item>
+    </style>
+
+    <style name="EditText.Grey" parent="@style/AppTheme">
+        <item name="colorControlActivated">@color/grey_40</item>
+        <item name="colorControlHighlight">@color/grey_40</item>
+        <item name="colorControlNormal">@color/grey_40</item>
+    </style>
+
+    <style name="ThemeTransparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorPrimary">@color/white</item><!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/phptravels_v7</item>
+        <item name="colorPrimaryDark">@color/phptravels_v7</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+
+</resources>

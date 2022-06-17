@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="normal_day">#000000</color>
+    <color name="selected_day_background">#2E3192</color>
+    <color name="selected_day_text">#ffffff</color>
+</resources>

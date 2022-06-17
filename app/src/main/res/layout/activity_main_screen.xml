@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end">
+
+
+    <LinearLayout
+        android:id="@+id/moving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/drawer_background_layout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="49dp"
+            android:background="@drawable/search_form_button"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/naviIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:src="@drawable/ic_drawer" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/closeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_margin="8dp"
+                    android:background="@color/yellow"
+                    android:text="@string/done"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/NaviText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="EllipsizeMaxLines" />
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/tv_citiesname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="LHE — DBX"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:visibility="gone"
+                    app:robotoTypeface="roboto_slab_bold" />
+
+                <ImageView
+                    android:id="@+id/filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-10dp"
+                    android:padding="10dp"
+                    style="@style/button.light"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:src="@drawable/filter" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ViewStub
+            android:id="@+id/layout_stub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inflatedId="@+id/message_layout" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerRecyclerView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_gravity="start"
+        android:background="@color/base"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</android.support.v4.widget.DrawerLayout>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingLeft="23dp"
+    android:paddingRight="11.66dp"
+    android:paddingTop="18.67dp">
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/tv_dialog_title"
+        style="@style/dialog.title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass_picker_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32.67dp"
+        android:gravity="center_vertical">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tv_adults"
+            style="@style/dialog.passengerPicker.text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:text="@string/pass_picker_adult"/>
+
+        <include
+            android:id="@+id/tv_adultscontrols"
+            android:layout_width="152dp"
+            layout="@layout/adultscontrols"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tv_children"
+            style="@style/dialog.passengerPicker.text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:text="@string/pass_picker_child"/>
+
+        <include
+            android:id="@+id/pp_children"
+            layout="@layout/childrencontrols"
+            android:layout_height="wrap_content"
+            android:layout_width="152dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tv_infants"
+            style="@style/dialog.passengerPicker.text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:text="@string/pass_picker_infant"/>
+
+        <include
+            android:id="@+id/pp_infants"
+            layout="@layout/infantscontrols"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/tv_positive_btn"
+        style="@style/button.light"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/dialog_finish"
+        android:textColor="@color/colorAviasalesMain"
+        android:textSize="18dp" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:1:1-11:12
+INJECTED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:1:1-11:12
+INJECTED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:1:1-11:12
+	package
+		ADDED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:2:5-32
+		INJECTED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:5:5-9:19
+	android:label
+		ADDED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:7:9-41
+	android:allowBackup
+		ADDED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:8:9-40
+uses-sdk
+INJECTED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml
+INJECTED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml

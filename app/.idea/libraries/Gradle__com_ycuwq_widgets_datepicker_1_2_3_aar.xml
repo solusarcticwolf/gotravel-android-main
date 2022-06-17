@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ycuwq.widgets:datepicker:1.2.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c6bad67f2b60b64597227e0bf510189/datepicker-1.2.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c6bad67f2b60b64597227e0bf510189/datepicker-1.2.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ycuwq.widgets/datepicker/1.2.3/19e967696a282471bddad513c3de278e02733d2e/datepicker-1.2.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ycuwq.widgets/datepicker/1.2.3/35f53abd89368fb759fe15df38a1afaf7e1825b2/datepicker-1.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

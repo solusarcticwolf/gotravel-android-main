@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1-ADULT"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:id="@+id/title"
+            android:layout_gravity="center_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/jet"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+
+
+            <com.phptravelsnative.utality.Views.TourSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mr."
+                android:id="@+id/tour_type"
+                app:type="mr"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:tag="0"
+                android:background="@color/jet"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/tour_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_action_name"
+                />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/primary_dark"
+            android:inputType="text"
+            android:hint="@string/first_name"
+            />
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/primary_dark"
+            android:inputType="text"
+            android:hint="@string/last_name"
+            />
+
+        <EditText
+            android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/black"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            />
+
+        <!--  Email Label -->
+
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/black"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/nationality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/primary_dark"
+            android:inputType="text"
+            android:hint="Nationality"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Searchfilter">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttn"
+        android:overScrollMode="never"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:id="@+id/header"
+            android:background="@color/light_blue">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+                style="@style/button.light"
+                android:id="@+id/close"
+                android:background="@drawable/ic_clear_black_24dp"/>
+
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="Fliter"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:robotoTypeface="roboto_light" />
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="Reset"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+                android:visibility="visible"
+                app:robotoTypeface="roboto_light" />
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/header"
+         android:id="@+id/header2"
+         android:layout_margin="10dp"
+         android:padding="10dp"
+         android:orientation="vertical">
+
+
+         <com.devspark.robototextview.widget.RobotoTextView
+             android:id="@+id/priceset"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Price Range"
+             android:textColor="@color/aluminum"
+             android:textSize="20dp"
+             android:layout_margin="10dp"
+             android:visibility="visible"
+             app:robotoTypeface="roboto_condensed_bold" />
+
+
+
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                android:id="@+id/rangeSeekbar1"
+                android:layout_below="@+id/priceset"
+                android:layout_margin="10dp"
+                app:bar_color="@color/iron"
+                app:left_thumb_color="@color/light_blue"
+                app:right_thumb_color="@color/light_blue"
+                app:bar_highlight_color="@color/red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rangeSeekbar1"
+                android:layout_alignLeft="@+id/rangeSeekbar1"
+                android:id="@+id/textMin1"
+                android:textColor="@color/aluminum"
+                android:text="min"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rangeSeekbar1"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/rangeSeekbar1"
+                android:layout_marginRight="15dp"
+                android:id="@+id/textMax1"
+                android:textColor="@color/aluminum"
+                android:text="mix" />
+
+
+
+
+
+
+     </RelativeLayout>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header2"
+        android:id="@+id/headerline1"
+        android:background="@color/view_line"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerline1"
+        android:id="@+id/header3"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/stoptv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Route Stop"
+                android:textColor="@color/aluminum"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                app:robotoTypeface="roboto_condensed_bold" />
+
+
+        <LinearLayout
+            android:layout_below="@+id/stoptv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header3"
+        android:id="@+id/headerline3"
+        android:layout_marginTop="10dp"
+        android:background="@color/view_line"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header3"
+        android:id="@+id/header4"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/flighttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Airlines"
+            android:textColor="@color/aluminum"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            app:robotoTypeface="roboto_condensed_bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/flighttv" />
+
+    </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/buttn"
+        android:layout_alignParentBottom="true">
+
+
+
+        <Button
+            android:id="@+id/search_fliter"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/header4"
+            android:layout_gravity="center"
+            android:background="@drawable/search_form_button"
+            android:text="@string/filter_button"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

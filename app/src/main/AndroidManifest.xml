@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phptravelsnative">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".utality.Extra.CalligraphyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.Hotel_travelhopedetails"></activity>
+        <activity android:name=".Activities.Manual_flight_detials_New" />
+        <activity android:name=".Activities.ManualFlightActivity_New" />
+        <activity android:name=".Activities.Webview" />
+        <activity android:name=".Activities.Find_Taxi" />
+        <activity android:name=".Activities.PaymentCardDetails" />
+        <activity android:name=".Activities.Searchfilter" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Bookingflight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MainLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Activities.SearchingHotels"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.HotelDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ExpediaDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.FullscreenImages"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activities.SearchingCarTourOffers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.WebViewInvoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CarDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Tp_Card"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TourDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.OffersDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.Invoice"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activities.Card" />
+        <activity android:name=".Activities.ExpediaCongratulations" />
+        <activity android:name=".Activities.SearchViewActivity" />
+        <activity android:name=".Activities.DateActivity" />
+        <activity android:name=".Activities.SingleDay" />
+        <activity android:name=".Activities.Cabin_Class" />
+        <activity android:name=".Activities.TravelPortActivity" />
+        <activity android:name=".Activities.CheckOutDetails" />
+        <activity android:name=".Activities.Tp_Login_Booking" />
+        <activity android:name=".Activities.ManualFlightActivity" />
+        <activity android:name=".Activities.Manual_flight_detials" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="Your Map KeY" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

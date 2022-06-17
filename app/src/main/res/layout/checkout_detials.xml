@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/main_layout"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/jet"
+            android:orientation="horizontal"
+            android:id="@+id/header"
+            android:layout_height="130dp">
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/company_icon"
+                        android:adjustViewBounds="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/right_arrow_blue"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/company_icon"
+                        android:id="@+id/company_name"
+                        android:textSize="15sp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Hamza"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Base Rate"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taxes and Fees"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount:"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="USD300"
+                    android:id="@+id/base_rate"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tax_rate"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="USD44.50"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="USD44.50"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:id="@+id/total_rate"
+                    android:layout_marginEnd="10dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/header"
+            android:id="@+id/detials_layout"
+            android:background="@color/jet"
+            android:layout_marginTop="2dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:text="Details"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/detials_layout"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/show_detials"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Departure"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/departure_array"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/return_view"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Return"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/return_array"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/show_detials"
+            android:background="@color/jet"
+            android:id="@+id/pessanger_table"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Traveler"
+                android:id="@+id/traveler"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/traveler"
+                android:layout_marginTop="15dp"
+                android:id="@+id/passenger"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_below="@+id/pessanger_table"
+            android:id="@+id/continue_booking"
+            android:background="@color/Dark_blue"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:text="Continue Booking"
+            android:layout_height="60dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>

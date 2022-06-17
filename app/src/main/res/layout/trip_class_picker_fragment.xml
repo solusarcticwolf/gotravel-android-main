@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/tv_dialog_title"
+        style="@style/dialog.title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18.67dp"
+        android:paddingLeft="23dp"
+        android:text="@string/trip_class_picker_passengers"/>
+
+    <FrameLayout
+        style="@style/button.light"
+        android:layout_width="match_parent"
+        android:id="@+id/economyclass"
+        android:layout_height="40dp"
+        android:layout_marginTop="17.33dp"
+        android:paddingLeft="23.33dp"
+        android:paddingRight="24dp">
+
+        <com.devspark.robototextview.widget.RobotoCheckedTextView
+            android:id="@+id/tv_economy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="@string/trip_class_economy"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/image_economy"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/radio_button" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/button.light"
+        android:id="@+id/classbusiness"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="23.33dp"
+        android:paddingRight="24dp">
+
+        <com.devspark.robototextview.widget.RobotoCheckedTextView
+            android:id="@+id/tv_business"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="@string/trip_class_business"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/image_business"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/radio_button" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/button.light"
+        android:id="@+id/classpremium"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="23.33dp"
+        android:paddingRight="24dp">
+
+        <com.devspark.robototextview.widget.RobotoCheckedTextView
+            android:id="@+id/tv_premium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="@string/trip_class_premium_economy"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/image_premium"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/radio_button" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

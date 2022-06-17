@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/search_form"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/fullTransparent"
+    android:clipChildren="false"
+    android:paddingBottom="@dimen/search_form_search_button_bottom_margin"
+    android:splitMotionEvents="false">
+
+
+
+    <include
+        android:id="@+id/radio_group"
+        layout="@layout/search_type_radio_group"/>
+
+    <RelativeLayout
+        android:id="@+id/dummy_view_for_flow_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/search_form_bkg_drawable"
+        android:clipChildren="false">
+
+        <View
+            android:id="@+id/second_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="@dimen/search_form_destinations_divider_bottom_margin"
+            android:background="@color/gray_divider" />
+
+        <LinearLayout
+            android:id="@+id/lt_trip_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_divider"
+            android:layout_marginBottom="@dimen/search_form_search_button_top_margin"
+            android:splitMotionEvents="false">
+
+            <RelativeLayout
+                android:id="@+id/btn_trip_class"
+                style="@style/button.light"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="56dp"
+                android:layout_weight="1.01"
+                android:paddingBottom="@dimen/search_form_trip_class_margin_bottom"
+                android:paddingLeft="15dp">
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/tv_trip_class_title"
+                    style="@style/search.date.small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/search_form_class"/>
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/tv_trip_class"
+                    style="@style/search.class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_trip_class_title"
+                    android:layout_below="@+id/tv_trip_class_title"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/trip_class_economy"/>
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/btn_passengers"
+                style="@style/button.light"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="@dimen/search_form_passengers_margin_right"
+                android:layout_marginTop="-0.67dp"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3.34dp">
+
+
+                <include
+                    layout="@layout/passengers_group"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_hotels"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/lt_trip_class"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/search_form_button"
+            android:text="@string/search_form_search_button"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:textSize="14dp"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_search_view"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dummy_view_for_flow_animation"
+        android:background="@drawable/search_form_bkg_drawable"
+        android:layout_below="@id/heeadrer">
+
+
+        <include
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/placedesgin"/>
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/heeadrer"
+        android:background="@color/phptravels_v7"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            style="@style/search.destination.city"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:text="@string/disply_travelhope" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

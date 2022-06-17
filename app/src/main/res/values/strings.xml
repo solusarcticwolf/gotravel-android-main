@@ -1,0 +1,222 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">PHP TRAVELS</string>
+    <string name="booking">BOOKING</string>
+    <string name="hotesDescription">Perfect hotels for you</string>
+    <string name="hotels">HOTELS</string>
+    <string name="toursDescription">Live your life</string>
+    <string name="Tours">TOURS</string>
+    <string name="flightsDescription">Book flights on the go</string>
+    <string name="filghts">FLIGHTS</string>
+    <string name="blogDescription">Read articles about travel</string>
+    <string name="blog">Blog</string>
+    <string name="cars">CARS</string>
+    <string name="carsDescription">Find your dream car</string>
+    <string name="offersDescription">Amazing deals arounds you</string>
+    <string name="offers">OFFERS</string>
+    <string name="ivisa">VISA</string>
+    <string name="bookingDescription">Check Your Bookings</string>
+    <string name="account_name">Account</string>
+    <string name="login_register">Login/Register</string>
+    <string name="home">Home</string>
+    <string name="contact">Contact Us</string>
+    <string name="version">Version 1.0</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="no_account">No account yet? Create one</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_member">Already a member? Login</string>
+    <string name="lunch_discount">Lunch Discount</string>
+    <string name="contacts">Contacts</string>
+    <string name="langu">Languages:</string>
+    <string name="hint_hotel">\tDestination</string>
+    <string name="hint_hotel_ex">"   SEARCH FOR LOCATION"</string>
+    <string name="hint_tour">Select  Location</string>
+    <string name="check_in">CHECK IN</string>
+    <string name="check_out">CHECK OUT</string>
+    <string name="child">"CHILD "</string>
+    <string name="adult">"ADULT "</string>
+    <string name="search">Search</string>
+    <string name="checkIn_number">27</string>
+    <string name="update">UPDATE</string>
+    <string name="book">BOOK</string>
+    <string name="book_now">BOOK NOW</string>
+    <string name="description">Description</string>
+    <string name="amenities">Amenities</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="policy">Policy</string>
+    <string name="map">MAP</string>
+    <string name="overview">OVERVIEW</string>
+    <string name="rooms">" ROOMS"</string>
+    <string name="reviews">REVIEWS</string>
+    <string name="related">RELATED</string>
+    <string name="rating">Rating:</string>
+    <string name="price">"Price :  "</string>
+    <string name="avg_night">AVG/Night</string>
+    <string name="logout">Log Out</string>
+
+    <string name="name">Name</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="hotel_title">SEARCH HOTEL</string>
+    <string name="to">TO</string>
+    <string name="location_from">"From City"</string>
+    <string name="location_to">"To City"</string>
+    <string name="tour_type">TOUR TYPE</string>
+    <string name="loading">LOADING</string>
+    <string name="select_car">SELECT THE CAR</string>
+    <string name="pick_up">PICKUP LOCATION</string>
+    <string name="date">DATE</string>
+    <string name="time">TIME</string>
+    <string name="dropoff_location">DROPOFF LOCATION</string>
+    <string name="send">SEND</string>
+    <string name="call">CALL</string>
+    <string name="invoice_hint">INVOICE NUMBER</string>
+    <string name="invc_code">INVOICE CODE</string>
+    <string name="txt_coupon">Do You Have A Coupon Code?</string>
+    <string name="etr_coupon_hint">Enter Your Coupon Number</string>
+    <string name="apply">APPLY COUPON</string>
+    <string name="conti">BOOK NOW</string>
+    <string name="proceed">PROCEED</string>
+    <string name="who">WHO?</string>
+    <string name="no">NO.</string>
+    <string name="about">About</string>
+    <string name="tour_title">SEARCH FOR TOURS</string>
+    <string name="tax_amp_vat"><![CDATA[Tax & Vat]]></string>
+    <string name="deposite_now">Deposite Now</string>
+    <string name="hotel_avail">No hotel available</string>
+    <string name="login">Login</string>
+    <string name="guest">GUEST</string>
+    <string name="coupon">COUPON</string>
+    <string name="address">Address</string>
+    <string name="room_not_available">ROOM NOT AVAILABLE</string>
+    <string name="pickup">PICK-UP</string>
+    <string name="dropoff">DROP-OFF</string>
+    <string name="inclusion">INCLUSIONS</string>
+    <string name="Exclusion">EXCLUSIONS</string>
+    <string name="inflant">INFANTS</string>
+    <string name="detail">DETAIL</string>
+    <string name="my_booking">My Bookings</string>
+    <string name="registration">Registration</string>
+    <string name="setting">SETTINGS</string>
+    <string name="city">CITY</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="state">State</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_cw">Card CVV</string>
+    <string name="sending">SENDING...</string>
+    <string name="authenticating">Authenticating...</string>
+    <string name="retry">Retry</string>
+    <string name="coupon_applied">Coupon Applied Successfully</string>
+    <string name="my_account">My Account</string>
+    <string name="profile">PROFILE</string>
+    <string name="check_invoice">Check Invoice</string>
+    <string name="empty_car">CARS NOT FOUND PLEASE CHANGE YOUR LOCARION</string>
+    <string name="empty_tour">TOURS NOT FOUND PLEASE CHANGE YOUR LOCARION</string>
+    <string name="empty_offers">OFFERS NOT FOUND PLEASE CHANGE YOUR LOCARION</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="address_2">Address 2</string>
+    <string name="submit">Submit</string>
+    <string name="exit">Exit</string>
+    <string name="error_api">Error In Api</string>
+    <string name="or">----- OR -----</string>
+    <string name="select_country">Select Country</string>
+    <string name="next">NEXT STEP</string>
+    <string name="spefiy_date">Please Specify Date</string>
+    <string name="cvv_number">CVV Number Must be Greater from 3 number</string>
+    <string name="room">Room</string>
+    <string name="navigation_drawer_close"></string>
+    <string name="navigation_drawer_open"></string>
+
+    <string name="tourtype_adult" tools:ignore="MissingTranslation"> Adult</string>
+    <string name="tourtype_text" tools:ignore="MissingTranslation">Tour Types</string>
+    <string name="search_form_class" tools:ignore="MissingTranslation">Class</string>
+    <string name="search_form_passengers_title" tools:ignore="MissingTranslation">Passengers</string>
+    <string name="search_form_search_button" tools:ignore="MissingTranslation">Search tickets</string>
+    <string name="search_form_search_tour" tools:ignore="MissingTranslation">Search </string>
+    <string name="trip_class_economy" tools:ignore="MissingTranslation">Economy</string>
+    <string name="trip_class_business" tools:ignore="MissingTranslation">Business</string>
+    <string name="trip_class_premium_economy" tools:ignore="MissingTranslation">Premium Economy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="done">DONE</string>
+    <string name="your_date">DATE</string>
+
+
+    <string name="pass_picker_title" tools:ignore="MissingTranslation">Select passengers</string>
+    <string name="pass_picker_adult" tools:ignore="MissingTranslation">Over 12</string>
+    <string name="pass_picker_child" tools:ignore="MissingTranslation">2 to 12 years old</string>
+    <string name="pass_picker_infant" tools:ignore="MissingTranslation">Under 2</string>
+    <string name="ok" tools:ignore="MissingTranslation">OK</string>
+
+    <string name="trip_class_picker_passengers" tools:ignore="MissingTranslation">Class</string>
+    <string name="dialog_finish">DONE</string>
+    <string name="test_pass_picker_num">0</string>
+    <string name="title_activity_bookingflight">Bookingflight</string>
+
+    <string name="hotel">Cancellation &amp; Hotel Policy</string>
+    <string name="terms">*T&amp;C</string>
+    <string name="select">Select Guests &amp; Rooms</string>
+    <string name="stop1">1 stop</string>
+    <string name="stop2">2 stop</string>
+    <string name="stop3">3 stop</string>
+    <string name="filter_button">Filter</string>
+    <string name="datepick_close">close</string>
+    <string name="datepick_done">Done</string>
+    <string name="search_form_taxi_button">Find Taxi</string>
+    <string name="disply_taxi"> Taxi</string>
+    <string name="disply_travelhope">FLIGHTS</string>
+    <string name="disply_tour">TOURS</string>
+    <string name="disply_car">CAR</string>
+    <string name="_dislyeTravelpayouts">TRAVELPAYOUTS</string>
+    <string name="TravelhopeFlights">FLIGHTS</string>
+    <string name="disply_hotel">HOTEL</string>
+    <string name="disply_ivisa">VISA</string>
+
+
+    <string name="select1">Select Guests &amp; Rooms</string>
+    <string name="strike_line"> <strike>$199 </strike> </string>
+    <string name="child1">Max 2 Adutls &amp; 1 Child</string>
+    <string name="breakfast">Free Break Fast, Wifi, pool</string>
+    <string name="hotel1">Cancellation &amp; Hotel Policy</string>
+    <string name="terms1">*T&amp;C</string>
+    <string name="rating1">56 Ratings &amp;\n32 Reviews</string>
+    <string name="get">Get 50% Cashback on this booking, upto $99, T&amp;C apply</string>
+    <string name="this_hotel_us_highly_rated_by_family_travelers">- This hotel us highly rated by family travelers</string>
+    <string name="sunrise_check_in_available">- Sunrise check-in available</string>
+    <string name="guest_love_the_location_as_it_near_beach">- Guest love the location as it near beach</string>
+    <string name="i_m_important">I’m Important!</string>
+    <string name="hotel_policy_and_rules">Hotel Policy and Rules</string>
+    <string name="nearby_landmarks">Nearby Landmarks</string>
+    <string name="zeroo_cafe">Zeroo Cafe</string>
+    <string name="sunset_point">Sunset point</string>
+    <string name="museum">Museum</string>
+    <string name="hotel_is_known_for_its_good_service_and_courteous_staff">- Hotel is known for its good service and courteous staff</string>
+    <string name="settings">Settings</string>
+    <string name="refer_earn">Refer and Earn</string>
+    <string name="lgout">Log out</string>
+    <string name="qA"><![CDATA[Questions & Answers]]></string>
+    <string name="t_and_c"><![CDATA[Terms & Conditions]]></string>
+    <string name="need_help_about_this_booking"><u>Need Help About this booking?</u></string>
+    <string name="get_started">GET STARTED</string>
+    <string name="popular_destination">POPULAR DESTINATION</string>
+    <string name="visa_phone">Phone</string>
+    <string name="from_country">From</string>
+    <string name="to_country">To</string>
+    <string name="visa_notes">Additional Notes</string>
+    <string name="disply_loading">Loading</string>
+    <string name="visabutton">Submit</string>
+    <string name="carfrom_date">From Date</string>
+    <string name="carto_date">To Date</string>
+    <string name="carto_time">To Time</string>
+    <string name="carfrom_time">From Time</string>
+    <string name="Travelhopehotels">hotels</string>
+    <string name="disply_aftersubmitvisa">Reservation Submitted</string>
+    <string name="disply_aftersubmitvisasecond">We will contact you soon for more details </string>
+    <string name="Checkin_date">Checkin</string>
+    <string name="Checkout_date">Checkout</string>
+
+</resources>

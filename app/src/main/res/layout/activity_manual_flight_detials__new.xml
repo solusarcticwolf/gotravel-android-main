@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Manual_flight_detials">
+
+
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        layout="@layout/flight_header1" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_below="@+id/header"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/oneway">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:id="@+id/top2"
+                        layout="@layout/flight_header" />
+                </LinearLayout>
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/retrun">
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:id="@+id/top222"
+                        layout="@layout/flight_headerreturn" />
+                </LinearLayout>
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_book"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ripple"
+        android:textColor="@color/white"
+        android:text="Book Now"
+        android:visibility="gone" />
+
+</RelativeLayout>

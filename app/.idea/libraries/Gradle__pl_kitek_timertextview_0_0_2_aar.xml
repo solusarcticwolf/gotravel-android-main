@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: pl.kitek:timertextview:0.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13542cbfc3740e672de351aa68a0f609/timertextview-0.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13542cbfc3740e672de351aa68a0f609/timertextview-0.0.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.kitek/timertextview/0.0.2/7914c6eae2fc77644189e343a0b2a362ad88a7f0/timertextview-0.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.kitek/timertextview/0.0.2/da0835293c0204e2d7d4ea7032ab88d72b21c7e0/timertextview-0.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

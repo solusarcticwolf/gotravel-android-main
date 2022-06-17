@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+
+           <ImageView
+               android:id="@+id/image"
+               android:layout_width="136dp"
+               android:layout_height="145dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/hotel_list12"/>
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp" />
+
+
+            </FrameLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="1.0"
+                    android:rating="3"
+                    android:layout_marginTop="5dp"
+                    android:theme="@style/RatingBar"
+                    style="?android:attr/ratingBarStyleSmall"/>
+
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#383c3f"
+                    android:text="Hotel Blue Sky"/>
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6b6d6c"
+                    android:textSize="11sp"
+                    android:text="5th street, Montreal"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+
+                    <com.devspark.robototextview.widget.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:textSize="11.7sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/left_rect"
+                        android:paddingRight="5sp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"/>
+                    <com.devspark.robototextview.widget.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fabulous"
+                        android:textSize="11.7sp"
+                        android:textColor="#3aab25"
+                        android:background="@drawable/right_rect"
+                        android:paddingRight="5sp"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"/>
+
+                </LinearLayout>
+
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#b5b7bb"
+                    android:textSize="9.5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Free Cancellation , Free Wi-Fi"/>
+
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="strike_line"
+                    android:textSize="10sp"
+                    android:textColor="#b5b7bb"
+                    android:layout_marginTop="3dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <com.devspark.robototextview.widget.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ed4a47"
+                        android:textSize="19sp"
+                        android:text="$149"/>
+
+                    <com.devspark.robototextview.widget.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25% Off"
+                        android:textSize="10sp"
+                        android:textColor="#6b6d6c"
+                        android:layout_marginLeft="9.5sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

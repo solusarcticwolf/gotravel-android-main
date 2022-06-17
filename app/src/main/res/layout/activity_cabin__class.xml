@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/jet"
+    android:id="@+id/main_layout_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_layout"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="14dp"
+            android:src="@drawable/ic_arrow_from"
+            />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Pessanger"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="8dp"
+             android:textSize="18sp"
+             />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:id="@+id/second_layout"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/main_layout"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/adult"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="(Adult +18)"
+                    android:textSize="10sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/a_minus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="PassengerClick"
+                    android:scaleType="center"
+                    android:tag="1"
+                    android:src="@drawable/minus_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="9dp"
+                    android:id="@+id/a_text"
+                    android:text="1"/>
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="center"
+                    android:id="@+id/a_plus"
+                    android:tag="0"
+                    android:onClick="PassengerClick"
+                    android:src="@drawable/plus_circle"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/jet"
+            android:layout_below="@+id/main_layout"
+            android:id="@+id/is_view"
+            />
+
+         <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/thrid_layout"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="@string/child"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="(Child +18)"
+                        android:textSize="10sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:id="@+id/c_minus"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="center"
+                        android:onClick="PassengerClick"
+                        android:tag="3"
+                        android:src="@drawable/minus_circle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="9dp"
+                        android:id="@+id/c_text"
+                        android:text="0"/>
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="center"
+                        android:id="@+id/c_plus"
+                        android:tag="2"
+                        android:onClick="PassengerClick"
+                        android:src="@drawable/plus_circle"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/jet"
+            android:layout_below="@+id/main_layout"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/is_view"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="@string/inflant"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="(Infants +18)"
+                        android:textSize="10sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="center"
+                        android:onClick="PassengerClick"
+                        android:id="@+id/i_minus"
+                        android:tag="5"
+                        android:src="@drawable/minus_circle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="9dp"
+                        android:id="@+id/i_text"
+                        android:text="0"/>
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="center"
+                        android:id="@+id/i_plus"
+                        android:tag="4"
+                        android:onClick="PassengerClick"
+                        android:src="@drawable/plus_circle"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_layout"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="14dp"
+            android:src="@drawable/ic_arrow_from"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cabin Class"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/first_layout"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:onClick="ClickRadio"
+                android:tag="0"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Economy"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/img_economy"
+                    android:src="@drawable/fill_circle"
+                    />
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/jet"
+                android:layout_below="@+id/main_layout"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:onClick="ClickRadio"
+                android:tag="1"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="First Class"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/img_first"
+                    android:src="@drawable/empty_circle"                    />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/jet"
+                android:layout_below="@+id/main_layout"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:onClick="ClickRadio"
+                android:tag="2"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Business"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/img_business"
+                    android:src="@drawable/empty_circle"                    />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>

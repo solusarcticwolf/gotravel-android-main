@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/search_form_button">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/world_map"
+            android:tint="@color/overlay_light_30" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-60dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_mlarge"
+                    android:text="Visa"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@android:color/white" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/beforedone"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_medium"
+                        android:layout_marginLeft="@dimen/spacing_middle"
+                        android:layout_marginRight="@dimen/spacing_middle"
+                        android:clipToPadding="false"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="1dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center_vertical"
+                            android:id="@+id/btn_origin"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:tint="@color/grey_40"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/ic_place"
+                                tools:ignore="VectorDrawableCompat"
+                                />
+
+                            <EditText
+                                android:id="@+id/car_from"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:hint="From"
+                                android:imeOptions="actionSearch"
+                                android:maxLines="1"
+                                android:layout_marginLeft="10dp"
+                                style="@style/search.destination.city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                />
+
+
+
+
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:tint="@color/grey_40"
+                                tools:ignore="VectorDrawableCompat" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_medium"
+                        android:layout_marginLeft="@dimen/spacing_middle"
+                        android:layout_marginRight="@dimen/spacing_middle"
+                        android:clipToPadding="false"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="1dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:tint="@color/grey_40"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/ic_place"
+                                tools:ignore="VectorDrawableCompat"
+                                />
+
+                            <EditText
+                                android:hint="@string/to_country"
+                                android:id="@+id/car_to"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:imeOptions="actionSearch"
+                                android:maxLines="1"
+                                android:layout_marginLeft="10dp"
+                                style="@style/search.destination.city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                />
+
+
+
+
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:tint="@color/grey_40"
+                                tools:ignore="VectorDrawableCompat" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_medium"
+                        android:layout_marginLeft="@dimen/spacing_middle"
+                        android:layout_marginRight="@dimen/spacing_middle"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="1dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:tint="@color/grey_40"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/uservisa"
+                                tools:ignore="VectorDrawableCompat"
+                                />
+
+                            <EditText
+                                android:id="@+id/first_name"
+                                android:hint="@string/first_name"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:maxLines="1"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:windowSoftInputMode="adjustResize"
+                                android:inputType="text" />
+
+
+
+
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:tint="@color/grey_40"
+                                tools:ignore="VectorDrawableCompat" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_medium"
+                        android:layout_marginLeft="@dimen/spacing_middle"
+                        android:layout_marginRight="@dimen/spacing_middle"
+                        android:clipToPadding="false"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="1dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:tint="@color/grey_40"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/name"
+                                tools:ignore="VectorDrawableCompat"
+                                />
+
+                            <EditText
+                                android:hint="@string/last_name"
+                                android:id="@+id/last_name"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:imeOptions="actionSearch"
+                                android:maxLines="1"
+                                android:layout_marginLeft="10dp"
+                                style="@style/search.destination.city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                />
+
+
+
+
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:tint="@color/grey_40"
+                                tools:ignore="VectorDrawableCompat" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_medium"
+                        android:layout_marginLeft="@dimen/spacing_middle"
+                        android:layout_marginRight="@dimen/spacing_middle"
+                        android:clipToPadding="false"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="1dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:tint="@color/grey_40"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/envelope"
+                                tools:ignore="VectorDrawableCompat"
+                                />
+
+                            <EditText
+                                android:hint="@string/email"
+                                android:id="@+id/email"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:imeOptions="actionSearch"
+                                android:maxLines="1"
+                                android:layout_marginLeft="10dp"
+                                style="@style/search.destination.city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                />
+
+
+
+
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:tint="@color/grey_40"
+                                tools:ignore="VectorDrawableCompat" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_medium"
+                        android:layout_marginLeft="@dimen/spacing_middle"
+                        android:layout_marginRight="@dimen/spacing_middle"
+                        android:clipToPadding="false"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="1dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:tint="@color/grey_40"
+                                android:layout_marginLeft="10dp"
+                                app:srcCompat="@drawable/phonecall"
+                                tools:ignore="VectorDrawableCompat"
+                                />
+
+                            <EditText
+                                android:hint="@string/visa_phone"
+                                android:id="@+id/phone"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:imeOptions="actionSearch"
+                                android:maxLines="1"
+                                android:layout_marginLeft="10dp"
+                                style="@style/search.destination.city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                />
+
+
+
+
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="@android:color/transparent"
+                                android:clickable="true"
+                                android:tint="@color/grey_40"
+                                tools:ignore="VectorDrawableCompat" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_middle"
+                        android:layout_marginRight="@dimen/spacing_middle"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:visibility="visible"
+                        app:cardCornerRadius="1dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:id="@+id/rl_deprat"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_xmedium"
+                                    android:layout_height="0dp" />
+
+                                <ImageButton
+                                    android:id="@+id/monthin"
+                                    android:layout_width="@dimen/spacing_xmlarge"
+                                    android:layout_height="@dimen/spacing_xmlarge"
+                                    android:background="@android:color/transparent"
+                                    android:clickable="true"
+                                    android:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/edit"
+                                    tools:ignore="VectorDrawableCompat" />
+
+
+                                <EditText
+                                    android:hint="@string/visa_notes"
+                                    android:id="@+id/notes"
+                                    android:inputType="text"
+                                    android:layout_weight="1"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:windowSoftInputMode="adjustResize"
+                                    android:background="@android:color/transparent"
+                                    android:maxLines="1"
+                                    android:imeOptions="actionDone"
+                                    android:layout_marginLeft="10dp"
+                                    style="@style/search.destination.city"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15dp"
+                                    />
+
+                            </LinearLayout>
+
+
+
+
+
+
+                            <Button
+                                android:id="@+id/search_hotels"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_below="@+id/lt_trip_class"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/search_form_button"
+                                android:text="@string/visabutton"
+                                android:textColor="@color/white"
+                                android:textSize="14dp" />
+
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/spacing_large" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_middle" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/donee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/search_form_button">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/world_map"
+                android:tint="@color/overlay_light_30" />
+
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/spacing_mlarge"
+            android:text="Visa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@android:color/white" />
+
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imagefgi"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/grey_40"
+            android:src="@drawable/orderplaced" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/text1"
+            style="@style/search.destination.city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagefgi"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/disply_aftersubmitvisa"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/text2"
+            style="@style/search.destination.city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:text="@string/disply_aftersubmitvisasecond"
+            android:textColor="@color/dark_gray"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

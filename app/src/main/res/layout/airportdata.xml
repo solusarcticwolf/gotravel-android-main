@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/btn_origin"
+        android:src="@drawable/ic_place"
+        android:visibility="visible"
+        android:tint="@color/colorAsPrimary"/>
+
+
+    <LinearLayout
+        android:id="@+id/lt_search_form_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:orientation="vertical">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/tv_cityto"
+                android:text="Dubai"
+                style="@style/search.destination.city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/displylocationsize"/>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/tv_id"
+                app:robotoTypeface="roboto_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true"
+                android:text="Dxb"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/grey_455A64"
+                android:textSize="17dp"/>
+        </RelativeLayout>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tv_airportto"
+            style="@style/search.destination.airport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="any airport dubai"
+            android:textSize="13dp"
+            android:layout_marginTop="1dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lt_search_form_button"
+        android:background="@color/light_black" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_back"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/select"
+        android:layout_marginLeft="40dp"
+        android:textSize="15sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_map_view"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#383c3f"
+            android:textSize="11.7sp"
+            android:text="Map"/>
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

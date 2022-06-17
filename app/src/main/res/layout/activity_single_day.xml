@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_date"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hamza Javed"
+                android:id="@+id/date_to"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/img_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/up" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height= "5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <com.andexert.calendarlistview.library.DayPickerView
+        android:id="@+id/pickerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        calendar:enablePreviousDay="false"
+        android:layout_below="@+id/dc"
+        calendar:singleSelectionOnly="true"
+        calendar:drawRoundRect="true"/>
+
+</LinearLayout>

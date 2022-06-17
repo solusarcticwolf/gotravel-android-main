@@ -1,0 +1,18 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.countrypicker" >
+4
+5    <uses-sdk android:minSdkVersion="17" />
+5-->/Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml
+6
+7    <application
+7-->/Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:5:5-9:19
+8        android:allowBackup="true"
+8-->/Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:6:9-35
+9        android:label="@string/app_name"
+9-->/Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:7:9-41
+10        android:theme="@style/AppTheme" >
+10-->/Users/mac/Documents/android projects/phptravels_android/countryPicker/src/main/AndroidManifest.xml:8:9-40
+11    </application>
+12
+13</manifest>
